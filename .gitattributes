@@ -1,4 +1,4 @@
-# Set the default behavior, in case people don't have core.autocrlf set.
+# Treat all text files as text
 * text=auto
 
 # Define the line endings for specific file types
@@ -6,6 +6,20 @@
 *.bat text eol=crlf
 *.txt text eol=lf
 *.md text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.js text eol=lf
 
 # Ensure all files use Unix line endings
 * text eol=lf
+
+# Mark binary files to avoid line ending conversion
+*.jpg binary
+*.png binary
+*.gif binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+*.ttf binary
+*.svg binary
+
